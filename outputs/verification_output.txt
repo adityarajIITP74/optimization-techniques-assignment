@@ -1,0 +1,27 @@
+==============================================================================
+ VERIFICATION SUITE
+==============================================================================
+
+1. Known textbook optima (Big-M)
+  [PASS] Case 1  min Z = 4x1 + x2                             got=17/5  want=17/5
+  [PASS] Case 1  x1                                           got=2/5  want=2/5
+  [PASS] Case 1  x2                                           got=9/5  want=9/5
+  [PASS] Case 2  max Z = 5x1 + 4x2                            got=21  want=21
+
+2. Infeasible / unbounded detection
+  [PASS] x1+x2>=10 and x1+x2<=2                               got=infeasible  want=infeasible
+  [PASS] max x1+x2 s.t. x1-x2>=1                              got=unbounded  want=unbounded
+
+3. Random LPPs vs scipy.optimize.linprog
+  [PASS] 60 random mixed-constraint LPPs                      got=0  want=0
+
+4. Known transportation optima (VAM + MODI)
+  [PASS] Case 1  VAM initial cost                             got=779  want=779
+  [PASS] Case 1  MODI optimal cost                            got=743  want=743
+  [PASS] Case 2  optimal cost                                 got=2850  want=2850
+  [PASS] Case 3  optimal cost (unbalanced)                    got=2424  want=2424
+  [PASS] Case 3  row/column totals satisfied                  got=True  want=True
+
+==============================================================================
+ 12 passed, 0 failed
+==============================================================================
