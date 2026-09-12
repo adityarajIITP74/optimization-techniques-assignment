@@ -36,7 +36,7 @@
  The two methods can also be run INDEPENDENTLY (see `run_mode` below), as the
  assignment asks for "one method at a time".
 
- Author : <your name>
+ Author : Aditya Raj
  Course : Optimization Techniques -- Assignment 1
 =============================================================================
 """

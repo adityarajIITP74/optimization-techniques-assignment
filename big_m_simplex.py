@@ -31,7 +31,7 @@
  All arithmetic uses fractions.Fraction => exact rational answers, no
  floating-point drift.
 
- Author : <your name>
+ Author : Aditya Raj
  Course : Optimization Techniques -- Assignment 1
 =============================================================================
 """
